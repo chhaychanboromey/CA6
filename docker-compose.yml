@@ -7,6 +7,7 @@ services:
     environment:
       - PORT=5002
       - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
 
   login-service:
     build: ./Login_Microservice
@@ -16,3 +17,4 @@ services:
     environment:
       - PORT=5003
       - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
